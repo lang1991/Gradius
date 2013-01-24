@@ -1,0 +1,33 @@
+Updated Features For Tower Defense Elements:
+
+1.The player can now summon spin knives to protect the ship. Any emeny hit by the knife would be destroyed, except for the final boss.
+The player can have 3 knives at most. Each knife upgrade would cost the player 10000 scores.
+
+2.The player can now summon "laser guard" to fight for her. The "laser guard" would stay right above player's ship and attack enemies automatically. The player can also upgrade the "laser guard" with a cost of 20000 scores each. The "laser guard" can be purchased 3 times, with the first time being having the guard and the other 2 times upgrading the guard. As the player upgrades the "laser guard", the cool down of each shot and the color of the laser would change. 
+
+3.The player can now hang a minigun right below the ship. The minigun is the most powerful upgrade; as a reuslt, the minigun purchase&upgrade would cost 30000 scores. The players can upgrade the minigun up to 2 times after the purchase of the minigun. The upgrades would decrease the cool down time of the minigun. When the minigun has 3 upgrades, it is almost IMBA.......
+
+4.The player can now summon zombie dogs from metal slug to fight for her. The player can use the mouse to left-click on the game screen and have a zombie dog fight for her. Each dog would cost 8000 scores. However, the zombie would not die until the player dies.
+
+5.The player can now summon "old guy" from metal slug to fight for her. The player can use the mouse to right-click on the game screen and have an "old guy" fight for her. Each "old guy" costs 8000 scores and they could only last for 30 second. After 30 seconds or the death of the player, they would run away. However, the "old guy" could shoot homing enemy balls for the player.
+
+Controls:
+Enter Key: start the game when the main menu shows up
+Arrow Keys: move the ship
+X Key: fire the built-in weapon of the ship
+Z Key: select built-in upgrades for the ship
+A Key: select among the "tower defense" upgrades for the ship
+S Key: confirm what to upgrade among the "tower defense" upgrades for the ship
+G Key: enter the God Mode. NOTE:the player has to wait for the default God Mode period to end when the ship just gets respawned, when the ship is not purple, the player can press G to enter God Mode. Also, once the god mode is on, it could not be turned off. THE GOD MODE DOES NOT COUNT FOR THE SITUATION WHERE THE PLAYER RUNS INTO A WALL.
+Left Mouse Click: summon zombie dogs for the ship and place the zombie dog at the mouse position
+Right Mouse Click: summon old guys for the ship and place the old guy at the mouse position
+
+
+Post Mortem:
+
+My last game is fairly successful. However, in this game, since I have to add tower defense elements, I need to add more units and give them functonalities. This revealed some design flaws of my first version.
+The major problem is I did not use a lot of inheritance in my last version. I should have used a parent class for player's bullets; in this way, if I need to add another fire mode of the player, I could do it easily without having to add collision conditions one by one for each enemy. In the same sense, I should have used inheritence for enemy classes. In doing this, I can just use the parent enemy class to check collision with player bullets. In my next game, I would try to avoid hard coding everything before I come up with a detailed relation chart.
+
+My personal favourite about this version is my particle effects. I think the particle effects for the "laser guard" added much fanciness for my game. Also, my inspiration for the spinning knife is from the Japanese cartoon Naruto. The knives are basically the different levels of "sya rin gan", which is pretty cool. 
+
+The zombie dog and the old guy are a little bit rough. I kind of ran out of time for this project(because of my irresponsible teammate for CTIN-488); however, if I have more time, I would make them mortal. I like the sprite from metal slug in particular.
